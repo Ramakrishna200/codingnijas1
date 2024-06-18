@@ -5,8 +5,7 @@ import axios from 'axios';
 import "./auth.css"
 
 // Set the base URL for axios requests
-axios.defaults.baseURL = 'http://localhost:5000'; // Adjust the URL as needed
-
+axios.defaults.baseURL = "https://codingnijas1.onrender.com"
 const Auth = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const { setUser } = useContext(AuthContext);
