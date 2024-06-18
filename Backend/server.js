@@ -18,9 +18,16 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 const corsOptions = {
-  origin: 'http://localhost:3000', // Replace with your frontend URL
+  origin: (origin, callback) => {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   optionsSuccessStatus: 200
 };
+
 
 // Middleware to enable CORS with options
 app.use(cors(corsOptions));
