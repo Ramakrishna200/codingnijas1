@@ -1,0 +1,64 @@
+/* StudentList.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .student-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .student-item {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .student-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .student-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .student-college {
+    font-size: 1em;
+    color: #888;
+  }
+  
+  .student-status {
+    font-size: 0.9em;
+  }
+  
+  .student-status.active {
+    color: green;
+  }
+  
+  .student-status.inactive {
+    color: red;
+  }
+  
