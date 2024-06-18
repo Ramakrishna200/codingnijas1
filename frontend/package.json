@@ -12,12 +12,13 @@
     "serve": "^14.2.0" 
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "serve -s build" 
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "server": "serve -s build",
+  "postinstall": "chmod +x node_modules/.bin/react-scripts"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
